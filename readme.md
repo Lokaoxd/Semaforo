@@ -29,7 +29,9 @@ Este projeto simula um sistema de semáforo utilizando um Raspberry Pi Pico W. O
 ### 3️⃣ Instalar o **GCC para ARM**
 - Baixe a ferramenta em: [GCC ARM Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm).
 - Adicione ao `PATH` do sistema:
-C:\Program Files (x86)\Arm GNU Toolchain<versão>\bin
+  ```
+  C:\Program Files (x86)\Arm GNU Toolchain\<versão>\bin
+  ```
 
 ### 4️⃣ Instalar o **Pico SDK**
 - Baixe aqui: [Pico Setup Windows](https://github.com/raspberrypi/pico-setup-windows).
@@ -42,4 +44,5 @@ C:\Program Files (x86)\Arm GNU Toolchain<versão>\bin
 ## 📜 Código Principal (resumo)
 ```c
 add_repeating_timer_ms(9000, repeating_timer_callback, NULL, &timer);
+```
 O temporizador chama `repeating_timer_callback` a cada 9 segundos para alternar os LEDs.
